@@ -154,7 +154,7 @@ Talk about how you just need a decent CPU, GPU not required. Prioritise direct-p
 </li>
 </ol>
 <h2 id="5-download-caddy-with-duckdns-and-dynamicdns-module">5. Download Caddy with DuckDNS and DynamicDNS module</h2>
-<p><strong>Caddy Reverse Proxy (“The Concierge”):</strong> We tell Caddy: “Wait internally in <strong>Room 10, Desk 8443</strong> for a secure briefcase (a HTTPS request). You have the key (SSL Certificate) to open the briefcase and see what’s inside.” Caddy looks inside and says: “Ah, they want the film <em>Up (2009)</em> from the Movie Library” and walks across the room to <strong>Cabinet 8096</strong> (the internal Jellyfin port). Caddy takes the message out of the secure briefcase and hands it to Jellfin. When Jellyfin replies, Caddy puts the movie data into the secure briefcase and sends it back to the Guard (Router) at the Side Door.</p>
+<p><strong>Caddy Reverse Proxy (“The Concierge”):</strong> We tell Caddy: “Wait internally in <strong>Room 10, Desk 8443</strong> for a secure briefcase (a HTTPS request). You have the key (SSL Certificate) to open the briefcase and see what’s inside.” Caddy looks inside and says: “Ah, they want the film <em>Up (2009)</em> from the Movie Library” and walks across the room to <strong>Cabinet 8096</strong> (the internal Jellyfin port). Caddy takes the message out of the secure briefcase and hands it to Jellyfin. When Jellyfin replies, Caddy puts the movie data into the secure briefcase and sends it back to the Guard (Router) at the Side Door.</p>
 <ol>
 <li>
 <p>Go to <a href="https://caddyserver.com/download">https://caddyserver.com/download</a></p>
@@ -198,7 +198,7 @@ Talk about how you just need a decent CPU, GPU not required. Prioritise direct-p
 <span class="line"><span>        dns duckdns &#x3C;DUCKDNS_TOKEN></span></span>
 <span class="line"><span>    }</span></span>
 <span class="line"><span></span></span>
-<span class="line"><span>    # Proxy to your local Jellfin instance</span></span>
+<span class="line"><span>    # Proxy to your local Jellyfin instance</span></span>
 <span class="line"><span>    reverse_proxy 192.168.0.XX:8096</span></span>
 <span class="line"><span>}</span></span></code></pre>
 <p>replacing:</p>
@@ -387,7 +387,7 @@ Talk about how you just need a decent CPU, GPU not required. Prioritise direct-p
 <p>This is cool, but wouldn’t it be cooler if we could remotely access our Jellyfin PC so we can start new torrents when abroad? With <strong>Chrome Remote Desktop</strong> we can! It allows us to connect to the Jellyfin Windows PC from another PC, laptop, or even your phone. This means we can see the progress of torrents, or even start a new torrent, and move files into the Jellyfin Media folder.</p>
 <p>Install and setup <strong>Chrome Remote Desktop</strong> on your Jellyfin PC here: <a href="https://remotedesktop.google.com/">https://remotedesktop.google.com/</a></p>
 <p>And now all you need to connect to the Jellyfin PC is Internet access, another device, and your Google account.</p>
-<h2 id="11-set-your-jellyfin-pc-to-never-sleep-and-ensure-your-wifi-is-set-to-connect-automaically-when-in-range">11. Set your Jellyfin PC to never sleep and ensure your WiFi is set to connect automaically when in range</h2>
+<h2 id="11-set-your-jellyfin-pc-to-never-sleep-and-ensure-your-wifi-is-set-to-connect-automatically-when-in-range">11. Set your Jellyfin PC to never sleep and ensure your WiFi is set to connect automatically when in range</h2>
 <p>This makes sure your PC never sleeps. (The PC monitor going black or even the PC auto logging out is perfectly fine, we just don’t want the PC to go into sleep/hibernate mode, which would turn off processes).</p>
 <ol>
 <li>In Windows Settings, go to <strong>Power &#x26; sleep settings</strong></li>
